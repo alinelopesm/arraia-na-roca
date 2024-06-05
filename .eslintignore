@@ -1,0 +1,20 @@
+# Ignorar diretório node_modules
+node_modules/
+
+# Ignorar arquivos de build
+dist/
+build/
+
+# Ignorar arquivos de configuração
+config/
+
+# Ignorar arquivos específicos
+*.min.js
+
+# Ignorar diretório coverage (geralmente usado para relatórios de cobertura de testes)
+coverage/
+
+# Ignorar arquivos e diretórios ocultos (começando com um ponto)
+.*.swp
+.DS_Store
+Thumbs.db
