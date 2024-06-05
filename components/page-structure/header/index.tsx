@@ -16,7 +16,7 @@ const Header = () => {
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const { themePallete, toggleTheme } = useThemePaletteMode();
+  const { themePallete } = useThemePaletteMode();
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
