@@ -16,7 +16,16 @@ const NavDesktop = () => {
           duration={500}
           color="inherit"
         >
-          <Button color="inherit">{item.label}</Button>
+          <Button
+            color="inherit"
+            sx={{
+              '&:hover': {
+                backgroundColor: 'rgba(255, 255, 255, 0.2)',
+              },
+            }}
+          >
+            {item.label}
+          </Button>
         </Link>
       ))}
     </nav>

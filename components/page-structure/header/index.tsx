@@ -9,20 +9,25 @@ import { useTheme, useMediaQuery } from '@mui/material';
 import ThemeToggleButton from '@/components/theme-toggle-button';
 import drawer from './drawer';
 import NavDesktop from './nav-desktop';
+import { useThemePaletteMode } from '@/context/theme-context';
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const { themePallete, toggleTheme } = useThemePaletteMode();
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
 
+  const isLightTheme = themePallete === 'light';
+  const appBarBackgroundColor = isLightTheme ? 'rgba(0, 0, 0, 0.7)' : 'rgba(22, 22, 22, 1)';
+
   return (
     <React.Fragment>
-      <AppBar position="fixed" sx={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
+      <AppBar position="fixed" sx={{ backgroundColor: appBarBackgroundColor }}>
         <Toolbar>
           <ThemeToggleButton />
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} />
@@ -43,12 +48,22 @@ const Header = () => {
       </AppBar>
       {isMobile &&
         <Drawer
-          anchor="top"
+          anchor="right"
           open={mobileOpen}
           onClose={handleDrawerToggle}
           variant="temporary"
           sx={{
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: '240px' },
+            '& .MuiDrawer-paper':
+            { 
+              boxSizing: 'border-box',
+              width: '240px',
+              backgroundColor: isLightTheme ? 'none' : 'rgba(22, 22, 22, 1)',
+              color: isLightTheme ? 'none' : 'white',
+              hover: "bg-light-50"
+            },
+            '&:hover': {
+              backgroundColor: 'rgba(255, 255, 255, 0.2)',
+            },
             display: { xs: isMobile ? 'block' : 'none' },
           }}
         >

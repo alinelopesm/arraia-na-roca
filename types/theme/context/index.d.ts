@@ -1,4 +1,4 @@
 export interface ThemeContextProps {
-  theme: Theme;
+  themePallete: Theme;
   toggleTheme: () => void;
 }

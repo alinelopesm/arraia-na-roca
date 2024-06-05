@@ -6,32 +6,32 @@ type Theme = 'light' | 'dark';
 const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
-  const [theme, setTheme] = useState<Theme>('light');
+  const [ themePallete, setThemePallete ] = useState<Theme>('light');
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') as Theme;
     if (savedTheme) {
-      setTheme(savedTheme);
+      setThemePallete(savedTheme);
       document.documentElement.classList.add(savedTheme);
     }
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
+    const newTheme = themePallete === 'light' ? 'dark' : 'light';
+    setThemePallete(newTheme);
     localStorage.setItem('theme', newTheme);
-    document.documentElement.classList.remove(theme);
+    document.documentElement.classList.remove(themePallete);
     document.documentElement.classList.add(newTheme);
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ themePallete, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );
 };
 
-export const useTheme = (): ThemeContextProps => {
+export const useThemePaletteMode = (): ThemeContextProps => {
   const context = useContext(ThemeContext);
   if (!context) {
     throw new Error('useTheme must be used within a ThemeProvider');
