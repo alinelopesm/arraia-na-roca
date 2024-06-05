@@ -7,16 +7,7 @@ const ContentPage: React.FC = () => {
     <Box sx={{ position: 'relative'}}>
       <Grid>
         <Grid item xs={12}>
-          <Box
-            sx={{
-              height: '50vh',
-              backgroundImage: 'url(/utils/img/testemadeira.jpeg)',
-              backgroundRepeat: 'no-repeats',
-              border: '1px solid red'
-            }}
-          >
-            Contente
-          </Box>
+          Content
         </Grid>
       </Grid>
     </Box>

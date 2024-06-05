@@ -1,4 +1,3 @@
-// components/ButtonPay.tsx
 import React from 'react';
 import { useScrollTrigger, Zoom, Box, Button, useMediaQuery, useTheme } from '@mui/material';
 import Link from 'next/link';
