@@ -26,8 +26,8 @@ const Header = () => {
   const appBarBackgroundColor = isLightTheme ? 'rgba(0, 0, 0, 0.7)' : 'rgba(22, 22, 22, 1)';
 
   return (
-    <React.Fragment>
-      <AppBar position="fixed" sx={{ backgroundColor: appBarBackgroundColor }}>
+    <>
+      <AppBar position="fixed" sx={{ backgroundColor: appBarBackgroundColor, paddingX: 0, margin: 0}}>
         <Toolbar>
           <ThemeToggleButton />
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} />
@@ -70,7 +70,7 @@ const Header = () => {
           {drawer}
         </Drawer>
       }
-    </React.Fragment>
+    </>
   );
 };
 

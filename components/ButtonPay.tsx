@@ -39,6 +39,9 @@ const ButtonPay: React.FC = () => {
               color: 'white',
               borderRadius: 20,
               width: isMobile ? '100%' : 'none',
+              '&:hover': {
+                backgroundColor: themePallete === 'light' ? 'rgba(0, 0, 0, 0.9)' : 'rgba(100, 100, 100, 1)',
+              },
             }}
           >
             Comprar ingresso

@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import { Link } from 'react-scroll';
-import menuItems from './menu-items';
+import menuItems from '../../../compositions/page-structure/menu-items';
 
 const NavDesktop = () => {
   return (
