@@ -1,7 +1,7 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import styles from './index.module.css';
 import { useMediaQuery, useTheme } from '@mui/material';
+import styles from './styles.module.css';
 
 const TextArraia = () => {
   const theme = useTheme();

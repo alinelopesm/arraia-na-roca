@@ -6,7 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from '@mui/material/Drawer';
 import { useTheme, useMediaQuery } from '@mui/material';
-import ThemeToggleButton from '@/components/theme-toggle-button';
+import ThemeToggleButton from '@/components/ThemeToggleButton';
 import drawer from './drawer';
 import NavDesktop from './nav-desktop';
 import { useThemePaletteMode } from '@/context/theme-context';
