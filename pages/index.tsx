@@ -26,8 +26,9 @@ const Home: React.FC = () => {
             textAlign: 'end',
             height: isMobile ? '40vh' : '45vh',
             backgroundImage: themePallete === 'light' ? 'url(/utils/images/banner.png)' : 'url(/utils/images/banner-dark.jpeg)',
-            backgroundSize: isMobile ? 320: 300,
-            backgroundRepeat: 'revert',
+            backgroundSize: isMobile ? 'none' : 300,
+            backgroundRepeat: false ? 'no-repeat' : 'revert',
+            backgroundPosition: isMobile ? 'bottom left' : 'top left',
             marginTop: themePallete === 'light' ? 0 : 5
           }}
         />
@@ -35,11 +36,10 @@ const Home: React.FC = () => {
       <Container
         id='container-page'
         maxWidth="lg"
-        className="flex flex-col min-h-72 mt-12 sm:mt-16"
+        className="flex flex-col min-h-72 mt-6 sm:mt-8"
       >
         <Header />
         <ContentPage />
-        
       </Container>
       <ButtonPay />
       <ScrollToTop />
