@@ -2,16 +2,19 @@ import React from 'react';
 import { useScrollTrigger, Zoom, Box, Button, useMediaQuery, useTheme } from '@mui/material';
 import Link from 'next/link';
 import { useThemePaletteMode } from '@/context/theme-context';
+import styles from './styles.module.css';
 
 const ButtonPay: React.FC = () => {
   const trigger = useScrollTrigger({
     disableHysteresis: true,
-    threshold: 270,
+    threshold: 10,
   });
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const { themePallete } = useThemePaletteMode();
+
+  const buttonClassName = `${styles['button-fire']} ${themePallete === 'light' ? styles['light'] : ''}`;
 
   return (
     <Zoom in={isMobile || trigger}>
@@ -26,9 +29,11 @@ const ButtonPay: React.FC = () => {
           paddingX: isMobile ? 2 : 'none',
           zIndex: 9999,
         }}
+        className="button-fire"
       >
         <Link href="https://loja.infinitepay.io/aamatias" passHref>
           <Button
+            className={buttonClassName}
             variant="contained"
             color="primary"
             size={isMobile ? "medium" : "large"}
