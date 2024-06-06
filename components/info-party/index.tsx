@@ -44,7 +44,7 @@ const TextArraia = () => {
           🎶 <strong>Atração Musical</strong>
         </Typography>
         <Typography variant="body1" component="p">
-          Para animar a noite, contaremos com a presença incrível banda <strong>Joe's Pub</strong>, com um repertório pra lá de especial!
+          Para animar a noite, contaremos com a presença incrível banda <strong>Joe`s Pub</strong>, com um repertório pra lá de especial!
         </Typography>
       </article>
 
