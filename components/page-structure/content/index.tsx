@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid } from '@mui/material';
 import { Box } from '@mui/material';
 import About from '@/pages/about';
-import CustomCarousel from '../carousel';
+import CustomCarousel from '../../carousel';
 
 const ContentPage: React.FC = () => {
   return (

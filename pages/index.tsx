@@ -2,7 +2,7 @@ import React from 'react';
 
 import ButtonPay from '@/components/button-pay';
 import ScrollToTop from '@/components/ScrollToTop';
-import ContentPage from '@/components/page-structure/ContentPage';
+import ContentPage from '@/components/page-structure';
 import Header from '@/components/page-structure/header';
 import { Box, Container, useMediaQuery, useTheme } from '@mui/material';
 import { useThemePaletteMode } from '@/context/theme-context';
