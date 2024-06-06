@@ -1,4 +1,4 @@
-import MenuItemProps from '@/types/page-structure/header/menuItems';
+import MenuItemProps from '@/types/page-structure';
 
 const menuItems: MenuItemProps[] = [
   { label: 'Informações', target: 'about' },

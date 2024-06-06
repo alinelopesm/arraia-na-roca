@@ -1,4 +1,4 @@
-import { ThemeContextProps } from '@/types/theme/context';
+import { ThemeContextProps } from '@/types/theme';
 import React, { createContext, useState, useContext, ReactNode, useEffect } from 'react';
 
 type Theme = 'light' | 'dark';
