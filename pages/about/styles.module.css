@@ -1,0 +1,12 @@
+.typographyStyle {
+  text-shadow: 2px 2px 4px rgba(22, 22, 22, 0.5);
+  font-weight: 900; /* Valor mais alto para fonte mais grossa */
+  -webkit-text-stroke: 1px rgba(22, 22, 22, 0.5); /* Adiciona uma borda à fonte */
+  background-image: url('/images/madeira-btn.jpeg');
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  background-position: top center;
+}
