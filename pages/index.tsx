@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ButtonPay from '@/components/ButtonPay';
+import ButtonPay from '@/components/button-pay';
 import ScrollToTop from '@/components/ScrollToTop';
 import ContentPage from '@/components/page-structure/content';
 import Header from '@/components/page-structure/header';
