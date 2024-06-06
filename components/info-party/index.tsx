@@ -19,7 +19,7 @@ const TextArraia = () => {
 
       <article className={styles.article}>
         <Typography variant="body1" component="p">
-          🕢 <strong>Data e Horário:</strong> 29 de junho de 2024 - A partir das 18h
+          🕢 <strong>Data e Horário:</strong> 29 de junho de 2024 - A partir das 17h
         </Typography>
       </article>
 
@@ -63,7 +63,7 @@ const TextArraia = () => {
         </Typography>
         <Typography variant="body1" component="p">
           Garanta já o seu ingresso! Eles estão à venda no <a>link aqui</a> na pagina.
-          O ingresso garantes todas as atrações acima, mas <strong className="text-yellow-600">não esqueça de levar suas bebibas prediletas</strong><br/>
+          O ingresso garantes todas as atrações acima, mas <strong className="text-yellow-500">não esqueça de levar suas bebibas prediletas</strong><br/>
           Os ingressos são limitados, então corra e não fique de fora!
         </Typography>
       </article>

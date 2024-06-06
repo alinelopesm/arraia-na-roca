@@ -38,7 +38,7 @@ const ButtonPay: React.FC = () => {
             color="primary"
             size={isMobile ? "medium" : "large"}
             sx={{
-              backgroundImage: 'url(/utils/img/banner.jpeg)',
+              backgroundImage: 'url(/images/banner.jpeg)',
               backgroundColor: themePallete === 'light' ? 'rgba(0, 0, 0, 0.7)' : 'rgba(55, 55, 55, 1)',
               color: 'white',
               borderRadius: 20,

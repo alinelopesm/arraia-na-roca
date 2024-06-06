@@ -17,7 +17,7 @@ const Home: React.FC = () => {
       <Box
         sx={{
           height: isMobile ? '40vh' : '45vh',
-          backgroundImage: themePallete === 'light' ? 'url(/utils/images/madeira-junina.png)' : 'none',
+          backgroundImage: themePallete === 'light' ? 'url(/images/madeira-junina.png)' : 'none',
         }}
       >
         <Box 
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
             display: 'flex',
             textAlign: 'end',
             height: isMobile ? '40vh' : '45vh',
-            backgroundImage: themePallete === 'light' ? 'url(/utils/images/banner.png)' : 'url(/utils/images/banner-dark.jpeg)',
+            backgroundImage: themePallete === 'light' ? 'url(/images/banner.png)' : 'url(/images/banner-dark.jpeg)',
             backgroundSize: isMobile ? 'none' : 300,
             backgroundRepeat: false ? 'no-repeat' : 'revert',
             backgroundPosition: isMobile ? 'bottom left' : 'top left',
@@ -36,7 +36,7 @@ const Home: React.FC = () => {
       <Container
         id='container-page'
         maxWidth="lg"
-        className="flex flex-col min-h-72 mt-6 sm:mt-8"
+        className="flex flex-col min-h-72 mt-6 sm:mt-8 mb-16"
       >
         <Header />
         <ContentPage />
