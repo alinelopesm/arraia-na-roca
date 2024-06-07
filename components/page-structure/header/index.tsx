@@ -5,11 +5,12 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from '@mui/material/Drawer';
-import { useTheme, useMediaQuery } from '@mui/material';
 import ThemeToggleButton from '@/components/ThemeToggleButton';
 import drawer from './drawer';
 import NavDesktop from './nav-desktop';
 import { useThemePaletteMode } from '@/context/theme-context';
+import CustomButton from '@/components/button-pay/custom-button';
+import { useScrollTrigger, useMediaQuery, useTheme } from '@mui/material';
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -24,6 +25,10 @@ const Header = () => {
 
   const isLightTheme = themePallete === 'light';
   const appBarBackgroundColor = isLightTheme ? 'rgba(0, 0, 0, 0.7)' : 'rgba(22, 22, 22, 0.8)';
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 10,
+  });
 
   return (
     <>
@@ -42,7 +47,10 @@ const Header = () => {
             </IconButton>
           )}
           {!isMobile && (
-            <NavDesktop />
+            <>
+              {!trigger && <CustomButton />}
+              <NavDesktop />
+            </>
           )}
         </Toolbar>
       </AppBar>

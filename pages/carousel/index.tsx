@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import styles from './styles.module.css';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import images from '@/compositions/carousel';
 
 const CustomCarousel: React.FC = () => {
@@ -13,7 +13,7 @@ const CustomCarousel: React.FC = () => {
         showStatus
         infiniteLoop
         autoPlay
-        showThumbs
+        showThumbs={false}
         swipeable
         interval={3000}
         className={styles.carousel}
