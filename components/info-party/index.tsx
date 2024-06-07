@@ -21,38 +21,36 @@ const TextArraia = () => {
 
       <article className={styles.article}>
         <Typography variant="body1" component="p">
-          🕢 <strong>Data e Horário:</strong> <b>29 de junho</b> - Sábado -
-          A partir das <b>17h</b>
+          🕢 <strong>Data e Horário:</strong> 29 de junho - Sábado -
+          A partir das 17h
         </Typography>
       </article>
 
       <article className={styles.article}>
-        <Typography variant="body1" component="ul">
+        <Typography variant="body1" component="p">
           <TicketIcon color='info'/> 
           <strong> Informações dos Ingressos: </strong>
           <TicketIcon color='info'/>
-          <br/>
-        
-          <section>
-            <strong>Categoria de Ingresso: </strong>
-            <b className='text-orange-500'> INTEIRA </b> - R$ 50,00 - A partir de 13 anos e
-            <b className='text-orange-500'> INFANTIL </b> R$ 10,00 - Crianças de 8 a 12 anos
-          </section>
-          <section>
-            <strong>Itens Inclusos no Ingresso: </strong>
-            <b className='text-sky-400'> Comida </b>,
-            <b className='text-sky-400'> Show da banda </b> e
-            <b className='text-sky-400'> Diversão </b>
-          </section>
         </Typography>
+        <section>
+          <strong>Categoria de Ingresso: </strong>
+          <b className='text-orange-500'> INTEIRA </b>- R$ 50,00 - A partir de 13 anos e
+          <b className='text-orange-500'> INFANTIL </b> R$ 10,00 - Crianças de 8 a 12 anos
+        </section>
+        <section>
+          <strong>Itens Inclusos no Ingresso: </strong>
+          <b className='text-sky-400'> Comida </b>,
+          <b className='text-sky-400'> Show da banda </b> e
+          <b className='text-sky-400'> Diversão </b>
+        </section>
         
-        <Typography variant="body1" component="p"><br />
+        <Typography variant="body1" component="p">
           Os ingressos são limitados, então corra e não fique de fora!
           Garanta já o seu!
-          <section>
-            <strong className="text-yellow-500">Lembre-se de levar SUAS BEBIDAS!!! </strong>**não teremos no local**
-          </section>
         </Typography>
+        <section>
+          <strong className="text-yellow-500">Lembre-se de levar SUAS BEBIDAS!!! </strong>**não teremos no local**
+        </section>
       </article>
 
       {!isMobile &&
