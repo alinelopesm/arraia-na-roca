@@ -63,7 +63,8 @@ const TextArraia = () => {
         </Typography>
         <Typography variant="body1" component="p">
           Garanta já o seu ingresso! Eles estão à venda no <a>link aqui</a> na pagina.
-          O ingresso garantes todas as atrações acima, mas <strong className="text-yellow-500">não esqueça de levar suas bebibas prediletas</strong><br/>
+          O ingresso garante apenas as atrações acima(comidas, banda, diversão).<br/>
+          <strong className="text-yellow-500">Lembre-se de levar o que for beber!!!</strong><br/>
           Os ingressos são limitados, então corra e não fique de fora!
         </Typography>
       </article>
