@@ -1,5 +1,33 @@
-
 .map {
   @apply flex-1 p-4;
+  position: relative;
 }
-  
+
+.card {
+  cursor: pointer;
+  position: relative;
+}
+
+.buttonContainer {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-transform: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
