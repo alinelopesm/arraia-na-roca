@@ -2,6 +2,7 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import { useMediaQuery, useTheme } from '@mui/material';
 import styles from './styles.module.css';
+import TicketIcon from '@mui/icons-material/ConfirmationNumber';
 
 const TextArraia = () => {
   const theme = useTheme();
@@ -12,14 +13,45 @@ const TextArraia = () => {
       {!isMobile &&
         <header className={styles.header}>
           <Typography variant="body1" component="p">
-            🎉 Venha participar do nosso tradicional Arraiá da Roça no dia <strong>29 de junho de 2024</strong>, um sábado que promete muita diversão e alegria para toda a família!
+            🎉 Venha participar do Rock in Roça nosso tradicional arraia da turma!!
+            Um sábado que promete muita diversão e alegria para toda a família!
           </Typography>
         </header>
       }
 
       <article className={styles.article}>
         <Typography variant="body1" component="p">
-          🕢 <strong>Data e Horário:</strong> 29 de junho de 2024 - A partir das 17h
+          🕢 <strong>Data e Horário:</strong> <b>29 de junho</b> - Sábado -
+          A partir das <b>17h</b>
+        </Typography>
+      </article>
+
+      <article className={styles.article}>
+        <Typography variant="body1" component="ul">
+          <TicketIcon color='info'/> 
+          <strong> Informações dos Ingressos: </strong>
+          <TicketIcon color='info'/>
+          <br/>
+        
+          <section>
+            <strong>Categoria de Ingresso: </strong>
+            <b className='text-orange-500'> INTEIRA </b> - R$ 50,00 - A partir de 13 anos e
+            <b className='text-orange-500'> INFANTIL </b> R$ 10,00 - Crianças de 8 a 12 anos
+          </section>
+          <section>
+            <strong>Itens Inclusos no Ingresso: </strong>
+            <b className='text-sky-400'> Comida </b>,
+            <b className='text-sky-400'> Show da banda </b> e
+            <b className='text-sky-400'> Diversão </b>
+          </section>
+        </Typography>
+        
+        <Typography variant="body1" component="p"><br />
+          Os ingressos são limitados, então corra e não fique de fora!
+          Garanta já o seu!
+          <section>
+            <strong className="text-yellow-500">Lembre-se de levar SUAS BEBIDAS!!! </strong>**não teremos no local**
+          </section>
         </Typography>
       </article>
 
@@ -54,18 +86,6 @@ const TextArraia = () => {
         </Typography>
         <Typography variant="body1" component="p">
           Vista sua melhor roupa caipira e entre no clima da festa! Haverá prêmios para os trajes mais criativos e autênticos.
-        </Typography>
-      </article>
-
-      <article className={styles.article}>
-        <Typography variant="body1" component="p">
-          🚨 <strong>Ingressos:</strong>
-        </Typography>
-        <Typography variant="body1" component="p">
-          Garanta já o seu ingresso! Eles estão à venda no <a>link aqui</a> na pagina.
-          O ingresso garante apenas as atrações acima(comidas, banda, diversão).<br/>
-          <strong className="text-yellow-500">Lembre-se de levar o que for beber!!!</strong><br/>
-          Os ingressos são limitados, então corra e não fique de fora!
         </Typography>
       </article>
     </div>
