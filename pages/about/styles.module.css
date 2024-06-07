@@ -1,10 +1,7 @@
 .typographyStyle {
-  text-shadow: 2px 2px 4px rgba(124, 123, 123, 0.8);
   font-weight: 900; /* Valor mais alto para fonte mais grossa */
-  -webkit-text-stroke: 1px rgba(85, 83, 83, 0.6); /* Adiciona uma borda à fonte */
-  background-image: url('/images/comidas/pe-de-moleque.jpeg');
-  background-size: cover;
-  -webkit-background-clip: text;
+  -webkit-text-stroke: 1px rgba(31, 30, 30, 0.2); 
+  background: linear-gradient(135deg, rgb(255, 87, 34) 0%, rgb(255, 153, 0) 50%, rgb(238, 218, 5) 100%); 
   background-clip: text;
   color: transparent;
   text-align: center;
