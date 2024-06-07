@@ -1,0 +1,15 @@
+.container {
+  @apply flex flex-col md:flex-row md:gap-4;
+}
+
+.contact {
+  @apply flex-1 p-4;
+}
+
+.map {
+  @apply flex-1 p-4;
+}
+
+.link-location {
+  color: #1190eb; /* ou a cor desejada */
+}
