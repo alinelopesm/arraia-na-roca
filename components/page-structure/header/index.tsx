@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   const isLightTheme = themePallete === 'light';
-  const appBarBackgroundColor = isLightTheme ? 'rgba(0, 0, 0, 0.7)' : 'rgba(22, 22, 22, 1)';
+  const appBarBackgroundColor = isLightTheme ? 'rgba(0, 0, 0, 0.7)' : 'rgba(22, 22, 22, 0.8)';
 
   return (
     <>
