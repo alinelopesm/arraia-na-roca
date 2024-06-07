@@ -13,13 +13,14 @@ import Contact from './contact';
 const Home: React.FC = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isFullScreen = useMediaQuery(theme.breakpoints.up('sm'));
   const { themePallete } = useThemePaletteMode();
 
   return (
     <>
       <Box
         sx={{
-          height: '24vh',
+          height: isFullScreen ? '15.5vh' : '24vh',
           backgroundImage: themePallete === 'light' ? 'url(/images/madeira-junina.png)' : 'none',
         }}
       >
@@ -27,7 +28,7 @@ const Home: React.FC = () => {
           sx={{
             display: 'flex',
             textAlign: 'end',
-            height: '24vh',
+            height: isFullScreen ? '15.5vh' : '24vh',
             backgroundImage: themePallete === 'light' ? 'url(/images/banner.png)' : 'url(/images/banner-dark.jpeg)',
             backgroundSize: isMobile ? 'none' : 300,
             backgroundRepeat: false ? 'no-repeat' : 'revert',
