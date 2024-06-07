@@ -5,7 +5,7 @@ import CustomMap from '@/components/map';
 
 const Contact: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <div id="location" className={styles.container}>
       <div className={styles.contact}>
         <Typography variant="body1" component="p" sx={{ mb: 1 }}>
           Vamos juntos fazer um arraiá inesquecível!

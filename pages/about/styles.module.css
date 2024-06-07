@@ -1,8 +1,8 @@
 .typographyStyle {
-  text-shadow: 2px 2px 4px rgba(22, 22, 22, 0.5);
+  text-shadow: 2px 2px 4px rgba(124, 123, 123, 0.8);
   font-weight: 900; /* Valor mais alto para fonte mais grossa */
-  -webkit-text-stroke: 1px rgba(22, 22, 22, 0.5); /* Adiciona uma borda à fonte */
-  background-image: url('/images/madeira-btn.jpeg');
+  -webkit-text-stroke: 1px rgba(85, 83, 83, 0.6); /* Adiciona uma borda à fonte */
+  background-image: url('/images/comidas/pe-de-moleque.jpeg');
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
