@@ -6,6 +6,9 @@ import ContentPage from '@/components/page-structure/content';
 import Header from '@/components/page-structure/header';
 import { Box, Container, useMediaQuery, useTheme } from '@mui/material';
 import { useThemePaletteMode } from '@/context/theme-context';
+import About from './about';
+import CustomCarousel from '@/pages/carousel';
+import Contact from './contact';
 
 const Home: React.FC = () => {
   const theme = useTheme();
@@ -39,7 +42,11 @@ const Home: React.FC = () => {
         className="flex flex-col min-h-72 mt-6 sm:mt-8 mb-16"
       >
         <Header />
-        <ContentPage />
+        <ContentPage>
+          <About />
+          <CustomCarousel />
+          <Contact />
+        </ContentPage>
       </Container>
       <ButtonPay />
       <ScrollToTop />
